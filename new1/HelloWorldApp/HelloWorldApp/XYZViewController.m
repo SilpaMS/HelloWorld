@@ -14,25 +14,25 @@
 
 @implementation XYZViewController
 
-@synthesize readText;
-@synthesize resultLabel;
-
--(IBAction)saveButtonTapped{
-    [readText resignFirstResponder];
-    resultLabel.text = readText.text;
-    }
-
-
+#pragma mark - Initialisation Method
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+#pragma mark - Memory Warning Method
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Button Action
+-(IBAction)saveButtonTapped
+{
+    [_dataTextField resignFirstResponder];
+    _dataDisplayLabel.text = _dataTextField.text;
 }
 
 @end

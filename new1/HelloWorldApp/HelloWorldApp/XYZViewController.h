@@ -11,8 +11,8 @@
 @interface XYZViewController : UIViewController
 
 
-@property IBOutlet UITextField *readText;
-@property IBOutlet UILabel *resultLabel;
+@property IBOutlet UITextField *dataTextField;
+@property IBOutlet UILabel *dataDisplayLabel;
 
 -(IBAction)saveButtonTapped;
 @end
